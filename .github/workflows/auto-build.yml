@@ -15,7 +15,7 @@ jobs:
         env:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          ECR_REPO: eldar-server:master
+          ECR_REPO: "eldar-server:master"
         run: |
           chmod +x build-and-push.sh
           ./build-and-push.sh
